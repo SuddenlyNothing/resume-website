@@ -179,3 +179,8 @@ em {
   height: 167px;
   border: none;
 }
+
+h3 {
+  font-size: larger;
+  text-decoration: underline;
+}
