@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/*
+  Name: Bix Men
+  Date: January 12, 2022
+  Section: CSE 154 AG
+  Stylesheet used in all the html pages in this directory. Has a modern look
+  with thin fonts and limited color palette that sticks to lighter greyish
+  tones. The spaced out structure also complements the modern look.
+  Some selectors and properties found through the help of stackoverflow.com
+  and w3school.com
+*/
+
+* {
+  font-family: 'Roboto', sans-serif;
+  color: darkslategray;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+body, html {
+  height: 100%;
+}
+
+body, p, .center {
+  text-align: center;
+}
+
+a, #logo, body {
+  background-color: white;
+}
+
+body {
+  margin: 0;
+}
+
+header, main, h1, h2 {
+  border: solid;
+  margin: auto;
+}
+
+header, main {
+  width: 50%;
+  padding: 20px;
+  border-width: 10px;
+  text-align: left;
+}
+
+h1, h2, .navbar {
+  background-color: aliceblue;
+}
+
+h1, h2 {
+  border-width: 2px;
+  padding: 10px;
+  width: fit-content;
+}
+
+ul, ol {
+  list-style-type: none;
+  padding: 0px;
+}
+
+header, main, img {
+  margin: 10px auto;
+}
+
+.center {
+  justify-content: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: xx-large;
+}
+
+img {
+  image-rendering: pixelated;
+}
+
+.navbar, .center, .navbar > nav > ul, .split {
+  display: flex;
+}
+
+.navbar, .navbar > nav > ul {
+  align-items: center;
+}
+
+.navbar {
+  top: 0;
+  left: 0;
+  justify-content: start;
+  border-bottom: 2px solid;
+  z-index: 100;
+}
+
+#logo {
+  height: 50px;
+  margin: 0 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.navbar > nav > ul > li:not(:last-child) {
+  border-right: 2px solid;
+}
+
+.navbar > nav > ul, .navbar > a {
+  border-radius: 10px;
+}
+
+.navbar > nav > ul {
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.navbar > nav > ul, .navbar > a, #logo {
+  border: 2px solid;
+}
+
+.navbar > a {
+  border-color: darkslategray;
+}
+
+.selected {
+  background-color: darkgrey;
+  color: white;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 0px 10px;
+}
+
+a {
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #fa5c5c;
+}
+
+.navbar a:hover {
+  background-color: grey;
+  color: snow;
+}
+
+#contact {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.split {
+  justify-content: space-between;
+}
+
+.together > *:not(:last-child) > * {
+  margin-bottom: 0;
+}
+
+.together > *:last-child > * {
+  margin-top: 0;
+}
+
+.together > *:nth-child(2) > * {
+  font-size: large;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.game-link {
+  width: 208px;
+  height: 167px;
+  border: none;
+}
